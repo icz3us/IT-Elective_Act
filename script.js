@@ -39,8 +39,8 @@ function changeTextColor() {
         "sana ako pa rin ☀️",
         "nakalimutan na nya ako",
         "basic lang 🌸",
-        "ni 🌺",
-        "gga 🌿",
+        "jhfgdsfsdf 🌺",
+        "sfgdfhdgfh la nako malagay hahahah 🌿",
 
     ];
     
