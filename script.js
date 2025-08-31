@@ -111,11 +111,11 @@ document.addEventListener('click', function() {
     clickCount++;
     
     if (clickCount === 20) {
-        alert("🎊 Wow! You've clicked 20 times! You're really exploring this page! \n\nHere's a fun fact: This page was built with love, coffee, and lots of purple gradients! ☕💜");
+        alert("🎊 Wow! You've clicked 20 times! You're really exploring this page!");
     }
     
-    if (clickCount === 50) {
-        alert("🤯 50 clicks?! You're either really interested or really bored! \n\nEither way, thanks for spending time on my page! 😄");
+    if (clickCount === 30) {
+        alert("🤯 50 clicks?! You're either really interested or really bored! \n\nanyways, thanks for spending time on my page! 😄");
         
         document.body.style.animation = 'rainbow 3s linear';
         setTimeout(() => {
