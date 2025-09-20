@@ -3,25 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Icon Zeus R. Gonzales - Digital Portfolio</title>
+    <title>Gonzales, Icon Zeus R. - Digital Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Animated Background -->
     <div class="bg-animation"></div>
     
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Icon Zeus Portfolio</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#bio" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    
     <!-- Main Container -->
-    <div class="container">
-
+    <div class="container" id="home">
         <!-- Header Section -->
         <header class="header">
             <div class="profile-image" >
                 <img src="image.jpg" alt="Profile Image" class="avatar">
             </div>
-            <h1 class="name">Icon Zeus R. Gonzales</h1>
-            <p class="title">Full Stack Developer & UI/UX Designer</p>
+            <h1 class="name">Icon Zeus Gonzales</h1>
+            <p class="title">Full Stack Developer</p>
+            <p id="dynamic-greeting"></p>
             <button class="welcome-btn" onclick="showWelcome()">Welcome Message</button>
         </header>
 
@@ -30,8 +51,6 @@
             <p>
                 Aspiring Full Stack Developer & UI/UX Designer, currently pursuing a Bachelor of Science in Information Technology at Gordon College. Passionate about creating sleek, functional, and user-friendly digital experiences, I enjoy learning modern web technologies and exploring how design and code work together. Outside of my studies, I stay inspired by discovering new design trends and practicing through personal and academic projects.
             </p>
-
-
             
             <!-- Social Links -->
             <div class="social-links">
@@ -72,10 +91,11 @@
                 </div>
             </div>
 
+
             <p id="changeable-text" class="changeable-text">
-                Click the button below to see some magic! ✨
+                Click mo ko ✨
             </p>
-            <button class="color-btn" onclick="changeTextColor()">Random Text</button>
+            <button class="color-btn" onclick="changeTextColor()">Change Text Color</button>
         </section>
 
         <!-- Skills Section -->
@@ -86,11 +106,39 @@
                 <div class="skill-item">React</div>
                 <div class="skill-item">Vue.js</div>
                 <div class="skill-item">Python</div>
-                <div class="skill-item">UI/UX Design</div>
-                <div class="skill-item">Full Stack Web Developer</div>
+                <div class="skill-item">Full Stack Dev</div>
             </div>
         </section>
     </div>
+    <!-- Contact -->
+     <section id="contact">
+        <h2>Contact Me</h2>
+            <form id="contactForm" novalidate>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+      <small id="name-error" class="error-message"></small>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+      <small id="email-error" class="error-message"></small>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message"></textarea>
+      <small id="message-error" class="error-message"></small>
+    </div>
+
+    <button type="submit" class="submit-btn">Send Message</button>
+    <p id="success-message" style="display:none; color: #4ecdc4; margin-top: 10px;">
+      ✅ Message sent successfully!
+    </p>
+  </form>
+</section>
+
 
     <script src="script.js"></script>
 </body>
